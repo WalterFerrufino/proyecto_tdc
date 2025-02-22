@@ -1,0 +1,76 @@
+:root {
+    --black: #42424b;
+    --t-black: rgba(66, 66, 75, 0.95);    
+    --white: white;
+    --cofee: #54341f;
+    --very-ligh-beige: #fff7f1;
+    --ligh-beige: #f8e1cf;
+    --beige: #b2927a;
+    --dark-beige: #977260;
+    --light-cofee: #d0a35e;
+    --gray: #faf9f8;
+    
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-bolder: 900;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 360px;
+}
+
+.textarea-container {
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn3 {
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (min-width: 400px){
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1000px;
+    }
+
+    .input-container {
+        margin: 0 2rem;
+    }
+
+    input, .input {
+        height: 40px;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    .textarea-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .textarea {
+        width: 100%;
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

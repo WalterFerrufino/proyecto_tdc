@@ -1,0 +1,170 @@
+:root {
+    --black: #42424b;
+    --t-black: rgba(66, 66, 75, 0.95);    
+    --white: white;
+    --cofee: #54341f;
+    --very-ligh-beige: #fff7f1;
+    --ligh-beige: #f8e1cf;
+    --beige: #b2927a;
+    --dark-beige: #977260;
+    --light-cofee: #d0a35e;
+    --gray: #faf9f8;
+    
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-bolder: 900;
+}
+
+
+
+.parallax {
+    margin: 105px 0 0;
+}
+
+.tutoriales-parallax-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutoriales_parallax-info__h2 {
+    color: var(--very-ligh-beige);
+    width: 100%;
+    margin: 0;
+    text-shadow: 4px 4px 4px black;
+    text-align: center;
+}
+
+.receta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--gray);
+    padding: 2rem 0;
+}
+
+.receta__p {
+    font-size: 1.6rem;
+    font-weight: var(--fw-light);
+    color: var(--black);
+    margin: 1rem;
+}
+
+.receta__p-b {
+    font-weight: var(--fw-bolder);
+}
+
+.receta__p-k {
+    font-weight: var(--fw-bold);
+    font-style: italic;
+}
+
+.receta__p-center {
+    text-align: center;
+}
+
+.line {
+    width: 90%;
+}
+
+.paso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.paso-img {
+    width: 100%;
+    max-width: 680px;
+}
+
+.paso-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 1rem;
+    width: 100%;
+    max-width: 680px;
+}
+
+.paso__h6 {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.paso__p {
+    font-size: 1.6rem;
+    color: var(--black);
+    font-weight: var(--fw-light);
+}
+
+.paso__p-b {
+    font-weight: var(--fw-bolder);
+}
+
+.paso__p-k {
+    font-style: italic;
+}
+
+.paso__p-center {
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+.tutoriales-parallax-info {
+    padding: 4rem;
+}
+.tutoriales_parallax-info__h2 {
+    text-align: left;
+    }
+}
+
+
+@media (min-width: 800px) {
+    .paso {
+        flex-direction: row;
+        margin-bottom: 2rem;
+    }
+    .paso-img {
+        width: 45%;
+    }
+    .paso-info {
+        width: 45%;
+        justify-content: space-around;
+        padding: 4rem;
+    }
+    .paso__h6 {
+        margin-bottom: 1rem;
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+    }
+    .paso__p {
+        font-size: 2rem;
+    }
+    .receta__p {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .paso__h6 {
+        font-size: 3.2rem;
+    }
+    .paso__p {
+        font-size: 2.4rem;
+    }
+    .receta__p {
+        font-size: 2.4rem;
+    }
+
+}

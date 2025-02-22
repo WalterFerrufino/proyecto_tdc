@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel Deslizante</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .carousel {
+            position: relative;
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+            cursor: grab;
+        }
+        .carousel img {
+            width: 100%;
+            flex: 0 0 100%;
+            user-select: none;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .indicators {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .indicator {
+            width: 10px;
+            height: 10px;
+            background: gray;
+            border-radius: 50%;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .active {
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <div class="carousel-track">
+            <img src="/assets/home/Productos_cafe_packs_BARISTA_frente-600x600.jpg" alt="Imagen 1">
+            <img src="/assets/home/Productos_cafe_packs_BARISTA_frente-600x600.jpg" alt="Imagen 2">
+            <img src="/assets/home/Productos_cafe_packs_BARISTA_frente-600x600.jpg" alt="Imagen 3">
+        </div>
+        <button class="arrow prev">&#10094;</button>
+        <button class="arrow next">&#10095;</button>
+        <div class="indicators"></div>
+    </div>
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const images = document.querySelectorAll('.carousel img');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        const indicatorsContainer = document.querySelector('.indicators');
+        let currentIndex = 0;
+
+        images.forEach((_, i) => {
+            const indicator = document.createElement('div');
+            indicator.classList.add('indicator');
+            if (i === 0) indicator.classList.add('active');
+            indicator.addEventListener('click', () => goToSlide(i));
+            indicatorsContainer.appendChild(indicator);
+        });
+
+        function updateIndicators() {
+            document.querySelectorAll('.indicator').forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentIndex);
+            });
+        }
+
+        function goToSlide(index) {
+            currentIndex = (index + images.length) % images.length;
+            track.style.transition = 'transform 0.3s ease-in-out';
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            updateIndicators();
+        }
+
+        prevButton.addEventListener('click', () => goToSlide(currentIndex - 1));
+        nextButton.addEventListener('click', () => goToSlide(currentIndex + 1));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDC - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-figure-container">
+            <li class="nav-figure-li"><a href="#"><figure><img class="TDALogo" src="/assets/TIENDADECAFE.svg" alt=""></figure></a></li class="nav-figure-li">
+                <li>
+                <figure>
+                    <img class="barsicon" src="/assets/3bars.svg" alt="">
+                </figure>
+            </li>
+        </ul>
+        <ul class="nav-li-container">
+            <li class="nav-li"><a class="nav-li__a" href="nuestrocafe.html">NUESTRO CAFE</a></li>
+            <li class="nav-li"><a class="nav-li__a" href="tutoriales.html">TUTORIALES</a></li>
+            <li class="nav-li"><a class="nav-li__a" href="#">LOCALES</a></li>
+            <li class="nav-li"><a class="nav-li__a" href="#">NUESTRO MENU</a></li>
+            <li class="nav-li"><a class="nav-li__a" href="./trabajaconnosotros.html">TRABAJA CON NOSOTROS</a></li>
+            <li class="nav-li"><a class="nav-li__a" href="./franquicias.html">FRANQUICIAS</a></li>
+            <li class="nav-li"><a class="nav-li__a" href="./contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="banner">
+            <div class="banner">
+                <div id="slider1" class="slide">
+                    <img class="imgslider" src="./assets/home/slider1.jpg" alt="">
+                    <div class="slide-info">
+                        <h3>Tu café preferido</h3>
+                        <h2>SIEMPRE CERCA</h2>
+                        <h4>Blends, variedades, cafés del mundo. <br>
+                        Encontrá tu Tienda más cercana y tentate con nuestros sabores</h4>
+                        <button class="btn1">ENCONTRANOS</button>
+                    </div>
+                </div>
+                <div id="slider2" class="slide">
+                    <img class="imgslider" src="./assets/home/slider2.jpg" alt="">
+                    <div class="slide-info">
+                        <h3>Probá nuestras</h3>
+                        <h2>CAPSULAS</h2>
+                        <h4>100% aluminio compatible con máquinas Nespresso</h4>
+                        <button class="btn1">DESCUBLILAS</button>
+                    </div>
+                </div>
+                <div id="slider3" class="slide">
+                    <img class="imgslider" src="./assets/home/slider3.jpg" alt="">
+                    <div class="slide-info">
+                        <h3>Desde 2007</h3>
+                        <h2>TOSTNADO TU CAFE</h2>
+                        <h4>Años de experiencia cuidando cada paso del proceso.</h4>
+                    </div>
+                </div>
+            
+                <button class="sliderarrows c" onclick="cambiarImagen(-1)">❮</button>
+                <button class="sliderarrows next" onclick="cambiarImagen(1)">❯</button>
+            </div>
+        </section>
+        
+        <section class="nuestros-productos">
+            <h5 class="nuestros-productos__h5">NUESTROS PRODUCTOS</h5>
+            <div class="line"></div>
+
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img class="carousel-img carousel-img1" src="/assets/home/Productos_cafe_packs_BARISTA_frente-600x600.jpg" alt="Imagen 1">
+                    <img class="carousel-img carousel-img2" src="/assets/home/Productos_cafe_packs_BRASIL_frente-600x600.jpg" alt="Imagen 2">
+                    <img class="carousel-img carousel-img3" src="/assets/home/Productos_cafe_packs_COLOMBIA_frente-600x600.jpg" alt="Imagen 2">
+                    <img class="carousel-img carousel-img4" src="/assets/home/Productos_cafe_packs_descaf_frente-600x600.jpg" alt="Imagen 2">
+                    <img class="carousel-img carousel-img5" src="/assets/home/Productos_cafe_packs_MINKA_frente-600x600.jpg" alt="Imagen 2">
+                    <img class="carousel-img carousel-img6" src="/assets/home/Productos_cafe_packs_SCEGLIERE_frente-600x600.jpg" alt="Imagen 2">
+                    <img class="carousel-img carousel-img7" src="/assets/home/capsulas_taza_barista-600x600.jpg" alt="Imagen 2">
+                    <img class="carousel-img carousel-img8" src="/assets/home/capsulas_taza_colombia-600x600.jpg" alt="Imagen 2">
+                    <img class="carousel-img carousel-img9" src="/assets/home/capsulas_taza_minka-600x600.jpg" alt="Imagen 2">
+                    <img class="carousel-img carousel-img10" src="/assets/home/capsulas_taza_scegliere-600x600.jpg" alt="Imagen 2">
+                </div>
+                <button class="carrow cprev">&#10094;</button>
+                <button class="carrow cnext">&#10095;</button>
+                <div class="indicators"></div>
+            </div>
+
+            <div class="secretos-del-barista-container">
+                <div class="secretos-del-barista">
+                    <img class="secretos-del-barista__img" src="/assets/home/home3Left.jpg" alt="">
+                    <div class="secretos-del-barista__info">
+                        <p class="secretos-del-barista__info__p">Aprendé a hacer tu café como un experto</p>
+                        <h5 class="secretos-del-barista__title">SECRETOS DEL BARISTA</h5>
+                        <button class="btn2"><a class="secretos-del-barista__info__a" href="#">VER</a></button>
+                    </div>
+                </div>
+                <div class="secretos-del-barista">
+                    <img class="secretos-del-barista__img" src="/assets/home/home3Rigth.jpg" alt="">
+                    <div class="secretos-del-barista__info">
+                        <p class="secretos-del-barista__info__p">Conocé todo lo que podés encontrar en nuestros locales</p>
+                        <h5 class="secretos-del-barista__title">NUESTROS PLATOS</h5>
+                        <button class="btn2"><a class="secretos-del-barista__info__a" href="#">VER</a></button>
+                    </div>
+                </div>    
+            </div>                
+        </section>
+
+        <section class="nuestro-cafe">
+            <h6 class="nuestro-cafe_title">NUESTRO CAFÉ</h6>
+            <h5 class="nuestro-cafe__h5">¿CUÁL VAS A ELEGIR HOY?</h5>
+            <div class="line"></div>
+
+            <div class="tipos-de-cafe">
+                <div class="nuestro-cafe-right">
+                    <h6 class="nuestro-cafe__h6">BARISTA</h6>
+                    <p class="nuestro-cafe__p">Nuestro tradicional house blend, el hijo prodigio de la casa. Granos provenientes de Brasil, nos permiten obtener este cafe pleno, de cuerpo medio, sin acidez ni amargor. Si lo vas a tomar en tu casa, te vas a sentir bien cerca de TIENDA.</p>
+                    <h6 class="nuestro-cafe__h6">SCEGLIERE</h6>
+                    <p class="nuestro-cafe__p">Una combinación única, lograda por la combinación de tres varietales: Brasil Santos Mogiana, Colombia Supremo y Moka. Un café de cuerpo medio, levemente acidulado y estructuralmente complejo.</p>
+                    <h6 class="nuestro-cafe__h6">MINKA</h6>
+                    <p class="nuestro-cafe__p">Este blend nos regala un café de gran cuerpo, con un sabor especiado. Si sos amante del café intenso, te vas a enamorar de nuestro Minka.</p>    
+                </div>    
+                <figure class="nuestro-cafe-figure">
+                    <img class="nuestro-cafe-figure__img" src="/assets/home/home4.jpg" alt="">
+                </figure>    
+                <div class="nuestro-cafe-left">
+                    <h6 class="nuestro-cafe__h6">COLOMBIA</h6>
+                    <p class="nuestro-cafe__p">Nuestro varietal clásico. Adentrate en las regiones colombianas con este café de cuerpo suave, gusto frutado, aroma floral y una delicada acidez. Inconfundible.</p>
+                    <h6 class="nuestro-cafe__h6">DESCAFEINADO</h6>
+                    <p class="nuestro-cafe__p">Si querés disfrutar un exquisito café, pero reducir tu dosis diaria de cafeína, este es tu blend! Café originario de Colombia, suave, de cuerpo medio y un aroma que te invita a probarlo. Recomendado para aquellas personas sensibles a la cafeína.</p>
+                    <h6 class="nuestro-cafe__h6">BRASIL</h6>
+                    <p class="nuestro-cafe__p">Un café de cuerpo suave, y baja acidez hacen de BRASIL el ideal para tus preparaciones de café filtrado.</p>    
+                </div>    
+            </div>
+        </section>
+
+        <section class="parallax">
+            <figure class="parallax_figure">
+                <img class="parallax__img" src="/assets/nuestratienda-parallax-bottom.jpg" alt="">
+            </figure>
+            <div class="parallax-info">
+                <h3 class="parallax-info__h3">SIEMPRE HAY UN</h3>
+                <h2 class="parallax-info__h2">TIENDRA <br>CERCA TUYO</h2>
+                <p class="parallax-info__p">Encontrá nuestra sucursal más cercana.</p>
+                <button class="btn1"><a href="#">INGRESAR</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <figure class="footer-figure">
+            <img src="/assets/TIENDADECAFE.svg" alt="">
+        </figure>
+        <div class="footer-contenidos">
+            <ul class="footer-contenidos-ul">
+                <h5 class="footer-contenidos-ul__h5">CONTENIDOS</h5>
+                <li class="footer-contenidos-ul-li"><a class="footer-contenidos-ul-li__a" href="#">Inicio</a></li>
+                <li class="footer-contenidos-ul-li"><a class="footer-contenidos-ul-li__a" href="nuestrocafe.html">Nuestro Café</a></li>
+                <li class="footer-contenidos-ul-li"><a class="footer-contenidos-ul-li__a" href="">Locales</a></li>
+                <li class="footer-contenidos-ul-li"><a class="footer-contenidos-ul-li__a" href="">Nuestro menú</a></li>
+            </ul>
+        </div>
+        <div class="footer-necesitasayuda">
+            <ul class="footer-necesitasayuda-ul">
+                <h5 class="footer-necesitasayuda-ul__h5">¿NECESITAS AYUDA?</h5>
+                <li class="footer-necesitasayuda-ul-li"><a class="footer-necesitasayuda-ul-li__a" href="./tutoriales.html">Tutoriales</a></li>
+                <li class="footer-necesitasayuda-ul-li"><a class="footer-necesitasayuda-ul-li__a" href="./trabajaconnosotros.html">Trabajá en TDC</a></li>
+                <li class="footer-necesitasayuda-ul-li"><a class="footer-necesitasayuda-ul-li__a" href="./franquicias.html">Franquicias</a></li>
+                <li class="footer-necesitasayuda-ul-li"><a class="footer-necesitasayuda-ul-li__a" href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-suscribite">
+            <ul class="footer-suscribite-ul">
+                <h5 class="footer-suscribite-ul__h5">SUSCRIBITE A NUESTRO NEWSLETTER</h5>
+                <div class="footer-suscribite-form">
+                    <input class="footer-suscribite-form__input" placeholder="Tu email" type="text">
+                    <button class="btn3">SUSCRIBIRME</button>    
+                </div>
+                <h5 class="footer-suscribite-ul__h5">CONECTATE CON NOSOTROS</h5>
+                <div class="footer-redes">
+                    <a class="footer-suscribite-ul-li__a" href="#"><img src="/assets/facebook-icon.svg" alt=""></a>
+                    <a class="footer-suscribite-ul-li__a" href="#"><img src="/assets/instagram-icon.svg" alt=""></a>
+                </div>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script src="./js/home.js"></script>
+    <script src="./js/parallax.js"></script>
+
+</body>
+</html>
