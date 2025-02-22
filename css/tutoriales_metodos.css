@@ -20,7 +20,7 @@
 
 
 .parallax {
-    margin: 105px 0 0;
+    margin: 64.22px 0 0;
 }
 
 .tutoriales-parallax-info {
@@ -54,6 +54,8 @@
     font-weight: var(--fw-light);
     color: var(--black);
     margin: 1rem;
+    width: 100%;
+    text-align: center;
 }
 
 .receta__p-b {

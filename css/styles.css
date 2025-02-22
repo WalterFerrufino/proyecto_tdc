@@ -194,12 +194,15 @@ label {
     align-items: center;
     list-style: none;
     background-color: black;
-    height: 12vh;
-    padding: 2rem;
+    padding: 1rem 2rem;
+}
+
+.barsicon {
+    width: 34px;
 }
 
 .TDALogo {
-    width: 12rem;
+    width: 8rem;
 }
 
 .nav-li-container {
@@ -479,7 +482,7 @@ label {
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 65vh;
+    height: calc(100vh - 64.22px);
     overflow: hidden;
     }
 
