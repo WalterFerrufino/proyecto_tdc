@@ -16,6 +16,9 @@
     --fw-bold: 700;
     --fw-bolder: 900;
 }
+h3 {
+    text-align: center;
+}
 
 .parallax-nuestromenu {
     display: flex;
@@ -232,6 +235,113 @@
 
 .bottom-right-img3 {
     height: 60%;
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 6rem 0 6rem;
+    background-color: var(--gray);
+}
+
+.menus-imgs-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-img-figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32%;
+    margin: .4rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.menu-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .1s;
+}
+
+.menu-img-figure:hover .menu-img {
+    transform: scale(1.01);
+}
+.menu-img-figure:hover {
+    border: 1px solid var(--black);
+}
+
+.menus-overlay {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+.menu-overlay-container1, .menu-overlay-container2, .menu-overlay-container3 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.menu-overlay-controls {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.menu-overlay__p {
+    color: var(--gray);
+    font-size: 32px;
+    font-weight: var(--fw-light);
+}
+
+.menu-overlay-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.menu-overlay__p-right {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.menu-overlay__p-left {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    cursor: pointer;
+}
+
+.menu-overlay__p-page-indicator {
+    font-size: 1.4rem;
+}
+
+.menu-overlay-img {
+    width: 80%;
 }
 
 @media (max-width: 750px) {
