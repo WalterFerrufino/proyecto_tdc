@@ -7,11 +7,22 @@ function hideAllOverlays() {
     overlays.forEach(overlay => overlay.style.display = "none");
 }
 
-// Evento para cerrar el overlay
+// Función para ocultar el scroll
+function hideScroll() {
+    document.body.style.overflow = "hidden";
+}
+
+// Función para mostrar el scroll
+function showScroll() {
+    document.body.style.overflow = "auto";
+}
+
+// Evento para cerrar el overlay y restaurar el scroll
 document.querySelectorAll(".menu-overlay-close").forEach(closeBtn => {
     closeBtn.addEventListener("click", function() {
         menusOverlay.style.display = "none";
         hideAllOverlays();
+        showScroll(); // Restaura el scroll cuando se cierra
     });
 });
 
@@ -21,6 +32,7 @@ document.querySelectorAll(".menu-img1, .menu-img2, .menu-img3").forEach((img, in
         menusOverlay.style.display = "flex";
         hideAllOverlays(); // Ocultar todos los overlays antes de mostrar el correcto
         overlays[index].style.display = "flex";
+        hideScroll(); // Ocultar el scroll cuando se abre el overlay
     });
 });
 
@@ -44,32 +56,4 @@ document.querySelectorAll(".menu-overlay__p-left").forEach((btn, index) => {
         let prevIndex = (index - 1 + overlays.length) % overlays.length;
         showOverlay(prevIndex);
     });
-});
-
-
-
-
-
-// Función para ocultar el scroll
-function hideScroll() {
-    document.body.style.overflow = "hidden";
-}
-
-// Función para mostrar el scroll
-function showScroll() {
-    document.body.style.overflow = "auto";
-}
-
-// Modificar los eventos de apertura para ocultar el scroll
-document.querySelectorAll(".menu-img").forEach(img => {
-    img.addEventListener("click", function() {
-        document.querySelector(".menus-overlay").style.display = "flex";
-        hideScroll();
-    });
-});
-
-// Modificar el evento de cierre para volver a mostrar el scroll
-document.querySelector(".menu-overlay-close").addEventListener("click", function() {
-    document.querySelector(".menus-overlay").style.display = "none";
-    showScroll();
 });
