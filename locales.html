@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TDC - Locales</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/locales.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
@@ -29,7 +30,22 @@
         </ul>
     </nav>
 
+    <main class="main-locales">
+        <div class="list-container">
+            <div class="input-icons-container">
+                <div class="locales__input-container">
+                    <input id="search-input" class="locales__input" type="text" placeholder="Direccion...">
+                    <img id="search-icon" class="locales__input-search-icon" src="./assets/search-icon.svg" alt="">
+                </div>
+                <img id="find-icon" class="locales__input-find-icon" src="./assets/find-icon.svg" alt="">    
+            </div>
+            <h3 class="locales__h3">Locales</h3>
+        </div>
 
+        <div class="map-container">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96180.51789606854!2d-58.515699825304004!3d-34.61565476740269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1740770478362!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
 
     <footer>
         <figure class="footer-figure">
@@ -70,7 +86,7 @@
     </footer>
 
     <script src="./js/home.js"></script>
-    <script src="./js/parallax.js"></script>
+    <script src="./js/locales.js"></script>
 
 </body>
 </html>
