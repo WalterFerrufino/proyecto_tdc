@@ -6,7 +6,7 @@ document.getElementById("find-icon").addEventListener("click", () => {
                 const lng = position.coords.longitude;
 
                 try {
-                    const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=TU_CLAVE_API`);
+                    const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=AIzaSyCxzCRucR-brugXTGnV5RsOJHM-92XnwMk`);
                     const data = await response.json();
 
                     if (data.status === "OK") {
