@@ -32,11 +32,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     width: 25%;
     height: 100%;
     background-color: #fff;
-    padding: 1rem;
 }
 
 .map-container {
@@ -49,6 +48,14 @@
     width: 100%;
     text-align: center;
     font-size: 2.4rem;
+    margin: 0;
+}
+
+.line {
+    border-bottom: 2px solid var(--beige);
+    width: 60%;
+    margin: 2rem 0;
+    text-align: center;
 }
 
 .input-icons-container {
@@ -57,6 +64,7 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
+    padding: .4rem;
 }
 
 .locales__input-container {
@@ -88,4 +96,57 @@
 .map {
     width: 100%;
     height: 100%;
+}
+
+.stores-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.store {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--ligh-beige);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.store:hover {
+    background-color: var(--beige);
+}
+
+.store-name {
+    font-size: 2.6rem;
+    color: var(--black);
+}
+
+.store-address {
+    font-size: 1.6rem;
+    color: var(--black);
+}
+
+.store-distance {
+    margin: 1rem 0 0;
+}
+
+.stores-container::-webkit-scrollbar {
+    width: 10px;
+    height: auto;
+}
+
+.stores-container::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #42424b;
+    color: white;
 }
