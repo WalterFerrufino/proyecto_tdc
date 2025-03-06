@@ -33,13 +33,13 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 25%;
+    width: 30%;
     height: 100%;
     background-color: #fff;
 }
 
 .map-container {
-    width: 75%;
+    width: 70%;
     height: 100%;
     background-color: beige;
 }
@@ -115,25 +115,27 @@
     align-items: center;
     width: 100%;
     height: auto;
-    background-color: var(--ligh-beige);
+    background-color: var(--light-cofee);
     padding: 1rem;
     margin-bottom: 1rem;
     transition: all .2s;
     cursor: pointer;
+    box-shadow: 2px 2px 4px black;
 }
 
 .store:hover {
-    background-color: var(--beige);
+    box-shadow: 0px 0px 4px 1px black inset;
 }
 
 .store-name {
     font-size: 2.6rem;
-    color: var(--black);
+    color: white;
 }
 
 .store-address {
     font-size: 1.6rem;
-    color: var(--black);
+    font-weight: var(--fw-light);
+    color: white;
 }
 
 .store-distance {
@@ -150,3 +152,33 @@
     background-color: #42424b;
     color: white;
 }
+
+@media (max-width: 1000px) {
+    .list-container {
+        width: 40%;
+    }
+    .map-container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-locales {
+        flex-direction: column;
+    }
+    .locales__input {
+        margin: 0;
+    }
+    .list-container {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+    .map-container {
+        width: 100%;
+    }
+    .stores-container, .locales__h3, .line {
+        display: none;
+    }
+}
+
